@@ -57,16 +57,16 @@ Variabel-variabel pada dataset kualita air tersebut adalah sebagai berikut:
 Setelah dilakukan proses _data understanding_, ternyata ditemukan bahwa pada kolom _ammonia_ terdapat anomali data dimana terdapat variabel "#NUM!" yang tidak diperlukan dalam proses (klasifikasi/prediksi), sehingga nantinya variabel tersebut akan dihapus terlebih dahulu sebelum pengecekan keberadaan _missing value_ pada dataset.
 
 ### _Exploratory Data Analysis_ (EDA) 
-- ![alternate text](https://raw.githubusercontent.com/Farinist/MLT1/main/pic/pic2.png)
+![alternate text](https://raw.githubusercontent.com/Farinist/MLT1/main/pic/pic2.png)
 
-Hasil visualisasi dari *Univariate Analysis* menunjukkan bahwa:
+Hasil visualisasi dari *Univariate Analysis* diatas menunjukkan bahwa:
   1. Variabel _cadmium_, _flouride_, _bacteria_, _lead_, _nitrates_, _nitrites_, _mercury_, _selenium_, dan _uranium_     berdistribusi normal.
   2. Variabel _aluminium_, _ammonia_, _arsenic_, _barium_, _chloramine_, _chromium_, _copper_, _perchlorate_, _radium_, dan _silver_ cenderung memiliki kemiringan positif.
   3. Variable _viruses_ dan _is_safe_ cenderung memiliki kemiringan negatif.
 
-- ![alternate text](https://raw.githubusercontent.com/Farinist/MLT1/main/pic/pic3.png)
+![alternate text](https://raw.githubusercontent.com/Farinist/MLT1/main/pic/pic3.png)
 
-Hasil Visualisasi dari matrix korelasi menunjukkan bahwa pada variabel _chloramine_ dan _chromium_ memiliki korelasi yang tinggi.
+Hasil Visualisasi dari matrix korelasi diatas menunjukkan bahwa pada variabel _chloramine_ dan _chromium_ memiliki korelasi yang tinggi.
 
 ### ***Data Preparation***
 - Membagi dataset
