@@ -78,6 +78,7 @@ Tahap ketiga adalah membuat fungsi baru yaitu *movie_recommendations* untuk mend
   - *sim_data* : kesamaan *dataframe*, simetrik, dengan film (tipe data *pd.DataFrame*).
   - *items*    : berisi judul film dan fitur-fitur lainnya yang digunakan untuk mendefinisikan kemiripan (tipe data *pd.DataFrame*).
   - k          : jumlah rekomendasi yang diberikan (tipe data *integer*).
+
 Kemudian melakukan proses *argpartition* untuk melakukan partisi secara tidak langsung. Lalu mengambil data dengan *similarity* terbesar, menghapus judul film yang dicari agar tidak ikut menjadi rekomendasi judul film, mencari rekomendasi film yang memiliki genre yang sama dengan judul film yang di input dan tahap yang terakhir adalah memanggil fungsi *movie_recommendations* dengan memasukkan judul film yang ingin dicari, contoh "*The Blue Lagoon*" yang memiliki genre "*Adventure*". Hasil yang didapat adalah 5 rekomendasi judul film yang memiliki genre yang sama yaitu "*Adventure*".
 
 Berikut adalah hasil 5 rekomendasi film yang memiliki genre yang sama dengan judul film yang diinput yaitu "*The Blue Lagoon*" :
