@@ -72,7 +72,7 @@ Variabel-variabel pada dataset film tersebut adalah sebagai berikut:
 - Tahap selanjutnya adalah membuat fungsi baru yaitu *movie_recommendations* untuk mendapatkan hasil rekomendasi dengan parameter sebagai berikut:
   - name       : yang merupakan judul film dengan tipe data *string*
   - *sim_data* : kesamaan *dataframe*, simetrik, dengan film (tipe data *pd.DataFrame*).
-  - *items*    : berisi judul anime dan fitur-fitur lainnya yang digunakan untuk mendefinisikan kemiripan (tipe data *pd.DataFrame*)
+  - *items*    : berisi judul film dan fitur-fitur lainnya yang digunakan untuk mendefinisikan kemiripan (tipe data *pd.DataFrame*)
   - k          : jumlah rekomendasi yang diberikan, bertipe data *integer* lalu mengambil nilai k dengan nilai *similarity* terbesar pada indeks matriks yang diberikan.
 
 - Selanjutnya melakukan proses *argpartition* untuk melakukan partisi secara tidak langsung. 
