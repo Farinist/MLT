@@ -64,7 +64,8 @@ Pada dataset yang digunakan, ternyata ditemukan bahwa pada kolom *rating, releas
   _Missing value_ harus ditangani sebelum dataset diproses dengan _machine learning_. Pada tahap ini proses pengecekan *missing value* dengan menggunakan fungsi _isnull()_. Fungsi _isnull()_ yaitu fungsi dari pandas untuk memeriksa apakah dataframe ada nilai null. _Missing value_ ditemukan pada kolom _rating_ sebanyak 77, pada kolom _released_ sebanyak 2, pada kolom _score_ sebanyak 3, pada kolom _votes_ sebanyak 3, pada kolom _writer_ sebanyak 3, pada kolom _star_ sebanyak 1, pada kolom _country_ sebanyak 3, pada kolom _budget_ sebanyak 2171, pada kolom _gross_ sebanyak 189, pada kolom _company_ sebanyak 17, dan pada kolom _runtime_ sebanyak 4. Karena adanya _missing value_ pada data film tersebut, dapat membuat film tidak bisa diidentifikasikan ke dalam salah satu genre film. Oleh karena itu, tahap selanjutnya adalah membersihkan *missing value* menggunakan fungsi *dropna()* dan kemudian melakukan pengecekan _missing value_ kembali.
 
 ## ***Modeling***
--Pada proyek ini proses *modeling* dilakukan menggunakan *Content-Based Filtering*.
+Pada proyek ini proses *modeling* dilakukan menggunakan *Content-Based Filtering*.
+
 Tahap pertama proses modeling pada proyek ini adalah vektorisasi dengan TF-IDF. Tf-Idf adalah perhitungan yang menggambarkan seberapa pentingnya kata dalam sebuah dokumen dan korpus. Proses ini digunakan untuk menilai bobot relevansi term dari sebuah dokumen terhadap seluruh dokumen dalam korpus. Tahap dari TF-IDF sebagai berikut:
   - inisialisasi TfidfVectorizer dengan memanggil fungsi *TfidfVectorizer()*.
   - Kemudian melakukan perhitungan IDF pada genre film dan melakukan proses *mapping array*.
