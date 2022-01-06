@@ -44,13 +44,15 @@ Variabel-variabel pada dataset film tersebut adalah sebagai berikut:
 ### ***Univariate Exploratory Data Analysis***
 ![alternate text](https://raw.githubusercontent.com/Farinist/MLT/main/pic/pic4.png)
 
-Hasil visualisasi dari diatas menunjukkan bahwa:
+3 genre film paling banyak berdasarkan hasil visualisasi diatas adalah *Comedy, Action* dan *Drama*. 
 
 ![alternate text](https://raw.githubusercontent.com/Farinist/MLT/main/pic/pic5.png)
 
-Hasil Visualisasi dari matrix korelasi diatas menunjukkan bahwa pada variabel _chloramine_ dan _chromium_ memiliki korelasi yang tinggi.
+3 rating film paling banyak berdasarkan hasil visualisasi diatas adalah R *(Restricted)*, PG *(Parental Guidance)* dan PG-13 *(Parental Guidance-13)*. 
 
 ![alternate text](https://raw.githubusercontent.com/Farinist/MLT/main/pic/pic6.png)
+
+3 Negara asal yang memproduksi film paling banyak berdasarkan hasil visualisasi diatas adalah *United States*, *United Kingdom* dan *France*. 
 
 ### ***Data Preparation***
 - Pengecekan *missing value*
@@ -69,7 +71,7 @@ Hasil Visualisasi dari matrix korelasi diatas menunjukkan bahwa pada variabel _c
 
 - Tahap selanjutnya adalah membuat fungsi baru yaitu *movie_recommendations* untuk mendapatkan hasil rekomendasi dengan parameter sebagai berikut:
   - name       : yang merupakan judul film dengan tipe data *string*
-  - *sim_data* : kesamaan *dataframe*, simetrik, dengan film yang bertipe data *pd.DataFrame*.
+  - *sim_data* : kesamaan *dataframe*, simetrik, dengan film (tipe data *pd.DataFrame*).
   - *items*    : berisi judul anime dan fitur-fitur lainnya yang digunakan untuk mendefinisikan kemiripan (tipe data *pd.DataFrame*)
   - k          : jumlah rekomendasi yang diberikan, bertipe data *integer* lalu mengambil nilai k dengan nilai *similarity* terbesar pada indeks matriks yang diberikan.
 
@@ -82,13 +84,13 @@ Hasil Visualisasi dari matrix korelasi diatas menunjukkan bahwa pada variabel _c
 ## ***Evaluation***
 Metrik yang dipakai dalam mengerjakan sistem rekomendasi kali ini adalah *precision* karena hanya menggunakan satu model saja yaitu _content based filtering_ dengan menggunakan _TF-IDF Vectorize_. Rumus *precision* sebagai berikut :
 
-*precision* = jumlah rekomendasi relevan yang berhasil ditemukan/ jumlah seluruh rekomendasi
+*precision* = jumlah rekomendasi relevan yang berhasil ditemukan/ jumlah seluruh rekomendasi.
 
 Pada *project* yang dikerjakan kali ini, jumlah rekomendasi pada film yang sesuai dengan genre sebanyak 5 film, dengan total rekomendasi yang ditampilkan adalah 5. Sehingga nilai dari *precision* dari sistem rekomendasi ini adalah 5/5 = 1 atau sama dengan 100%.
 
 Berikut adalah hasil 5 rekomendasi film yang memiliki genre yang sama dengan judul film yang diinput yaitu "*The Blue Lagoon*" :
 
-            Judul Film          | Genre Film
+Judul Film                      | Genre Film
 --------------------------------| -----------
 Shanghai Surprise	              | Adventure
 Dunston Checks In	              | Adventure
