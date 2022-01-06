@@ -59,7 +59,7 @@ Pada dataset yang digunakan, ternyata ditemukan bahwa pada kolom *rating, releas
 
 3 Negara asal yang memproduksi film paling banyak berdasarkan hasil visualisasi diatas adalah *United States*, *United Kingdom* dan *France*. 
 
-### **Pengecekan *missing value**
+### Pengecekan *missing value*
 
   _Missing value_ harus ditangani sebelum dataset diproses dengan _machine learning_. Pada tahap ini proses pengecekan *missing value* dengan menggunakan fungsi _isnull()_. Fungsi _isnull()_ yaitu fungsi dari pandas untuk memeriksa apakah dataframe ada nilai null. _Missing value_ ditemukan pada kolom _rating_ sebanyak 77, pada kolom _released_ sebanyak 2, pada kolom _score_ sebanyak 3, pada kolom _votes_ sebanyak 3, pada kolom _writer_ sebanyak 3, pada kolom _star_ sebanyak 1, pada kolom _country_ sebanyak 3, pada kolom _budget_ sebanyak 2171, pada kolom _gross_ sebanyak 189, pada kolom _company_ sebanyak 17, dan pada kolom _runtime_ sebanyak 4. Karena adanya _missing value_ pada data film tersebut, dapat membuat film tidak bisa diidentifikasikan ke dalam salah satu genre film. Oleh karena itu, tahap selanjutnya adalah membersihkan *missing value* menggunakan fungsi *dropna()* dan kemudian melakukan pengecekan _missing value_ kembali.
 
